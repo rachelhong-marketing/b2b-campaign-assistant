@@ -8,3 +8,13 @@ meta,primary_text,125,recommended,,,Longer text is cut off with See more
 meta,headline,40,recommended,,,Can be cut off on some placements
 email,subject,50,recommended,,,Brand guideline; longer subjects get cut off on mobile
 email,preheader,100,recommended,,,Many inboxes show 40 to 100 characters
+email,body,700,recommended,,,Brand guideline: about 100 words
+email,cta,25,recommended,,1,One CTA button per email
+landing-page,meta_title,60,recommended,1,1,Longer titles are cut off in search results
+landing-page,meta_description,155,recommended,1,1,Longer descriptions are cut off in search results
+landing-page,headline,60,recommended,1,1,Landing page template
+landing-page,subheadline,160,recommended,0,1,Landing page template
+landing-page,bullet,120,recommended,3,5,What you get
+landing-page,step,100,recommended,0,4,How it works
+landing-page,proof,120,recommended,0,2,Approved proof points only
+landing-page,cta,30,recommended,1,1,Same words as the ads' CTA

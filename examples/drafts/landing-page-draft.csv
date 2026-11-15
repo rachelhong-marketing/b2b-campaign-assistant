@@ -1,0 +1,14 @@
+channel,ad,field,text
+landing-page,assessment-page,meta_title,Data Readiness Assessment | Fernhill Software
+landing-page,assessment-page,meta_description,Find out if your customer data is ready for AI. Take the free 3-minute assessment and get your score and the top three fixes.
+landing-page,assessment-page,headline,Is your customer data ready for AI?
+landing-page,assessment-page,subheadline,"Take the 3-minute Data Readiness Assessment. Get a score from 0 to 100 and the three fixes that matter most, before your AI project starts."
+landing-page,assessment-page,bullet,Your readiness score from 0 to 100
+landing-page,assessment-page,bullet,"A score for each area: completeness, duplicates, consistency and governance"
+landing-page,assessment-page,bullet,"The top three fixes to make first, ranked by impact"
+landing-page,assessment-page,bullet,A report you can download and share with your team
+landing-page,assessment-page,step,Answer 15 questions about your customer data. It takes about 3 minutes.
+landing-page,assessment-page,step,See your score and the area holding you back most.
+landing-page,assessment-page,step,Get the full report with your top three fixes.
+landing-page,assessment-page,proof,"Teams spend 30% of their week fixing data (2025 customer survey, n=120)"
+landing-page,assessment-page,cta,Take the assessment

@@ -39,5 +39,11 @@ Any number not on this list needs a source and approval before it runs.
 
 **Email**
 - Subject: 50 characters or fewer, specific, no ALL CAPS.
+- Body: about 100 words. One idea.
 - One CTA button. Repeat it once as a text link.
 - Measure clicks and form fills, not opens.
+
+**Landing pages**
+- Follow `knowledge/02-brief-templates/landing-page-template.md`.
+- The headline answers the same question the ad asked. Same CTA words as the ad.
+- Show what the reader gets (the report, the guide cover), not stock photos.

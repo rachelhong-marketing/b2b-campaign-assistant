@@ -94,3 +94,34 @@ class Commands(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class Drafts(unittest.TestCase):
+    """The example drafts must pass the same checks the assistant runs on its own work."""
+    DRAFTS = ROOT / "examples" / "drafts"
+
+    def test_master_brief_draft_has_no_conflicts(self):
+        found = brief.check((ROOT / "examples" / "01-master-brief-draft.md").read_text())
+        self.assertEqual([f for f in found if f[0] == brief.CONFLICT], [])
+        gaps = " ".join(m for _, _, m in found)
+        self.assertIn("[MISSING: the plan says", gaps)
+        self.assertIn("[MISSING: no email lead", gaps)
+
+    def test_copy_drafts_pass(self):
+        for name in ("copy-draft.csv", "landing-page-draft.csv"):
+            results = copy_rules.check(copy_rules.read_copy(self.DRAFTS / name))
+            issues = [(k, i) for k, v in results.items() for i in v]
+            self.assertEqual(issues, [], name)
+
+    def test_keyword_draft_passes(self):
+        rows = keywords.read(self.DRAFTS / "keywords-draft.csv")
+        negs = keywords._read(self.DRAFTS / "negative-keywords-draft.csv")
+        found = keywords.check(rows, negs, keywords.load_competitor_terms(COMP))
+        self.assertEqual(found, [])
+
+    def test_landing_page_needs_three_bullets(self):
+        rows = [{"channel": "landing-page", "ad": "p", "field": f, "text": t} for f, t in
+                [("meta_title", "Title"), ("meta_description", "Desc"), ("headline", "Head"), ("cta", "Go"),
+                 ("bullet", "One")]]
+        msgs = " ".join(m for _, _, m in copy_rules.check(rows)[("landing-page", "p")])
+        self.assertIn("only 1 bullet(s); at least 3", msgs)

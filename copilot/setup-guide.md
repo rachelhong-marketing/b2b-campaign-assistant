@@ -13,11 +13,11 @@ For teams that work in Microsoft 365. Takes about an hour, with no IT help neede
 
 ## Steps
 
-1. **Make a SharePoint folder** with the same five subfolders as `knowledge/`: campaign plans, brief templates (with an `examples` subfolder), brand and channel, audience, performance.
+1. **Make a SharePoint folder** with the same seven subfolders as `knowledge/`: strategy (go-to-market and product marketing plans), campaign plans, brief templates (with an `examples` subfolder), brand and channel, audience, performance, and assets (one abstract per offer).
 2. **Fill it with approved material only.** Drafts teach the agent bad habits. Use real files (Word, PDF, Excel), not screenshots. For each creative, add 3 to 5 lines of text: headline, visual, CTA, channel, result.
 3. **Keep one creative performance log** in Excel: campaign, channel, ad, headline, CTA, dates, spend, clicks, leads, MQLs, takeaway. This is what makes "based on past performance" feedback work.
 4. In Copilot, choose **Create agent** → **Configure**.
-5. **Name:** Campaign Assistant. **Description:** Drafts channel briefs and reviews copy using our campaign plans, brand rules and past performance.
+5. **Name:** Campaign Assistant. **Description:** Drafts master and channel briefs, keywords, landing pages and ad and email copy from our go-to-market plans, and reviews copy using our brand rules and past performance.
 6. **Instructions:** paste the instructions from `agent-instructions.md` and fill in the brackets.
 7. **Knowledge:** add the SharePoint folder. Turn on **Only use specified sources** so it doesn't pull from the web.
 8. **Conversation starters:** copy the four from `agent-instructions.md`.
@@ -28,6 +28,9 @@ For teams that work in Microsoft 365. Takes about an hour, with no IT help neede
 2. Ask for a number that isn't in the knowledge files. It must answer [MISSING], not make one up.
 3. Give it a 34-character Google headline. It must say it's over 30 and rewrite it.
 4. Ask for a brief for a channel with no template. It must say so and mark its suggested format [CONFIRM].
+5. Ask for a master brief from a plan with no pipeline target. It must mark the target [MISSING], not make one up.
+6. Ask for keywords. It must not give search volumes or costs, and must not add competitor names.
+7. Ask for a landing page from an asset abstract that says the offer has no benchmark. The page must not claim one.
 
 ## Known limits
 - Instructions max 8,000 characters.
