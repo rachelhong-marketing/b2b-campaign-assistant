@@ -2,7 +2,7 @@
 
 > **B2B Campaign Lifecycle Toolkit**, step 1 of 5
 >
-> **1. Plan** → [2. Set up](https://github.com/rachelhong-marketing/b2b-paid-media-planner) → [3. Test](https://github.com/rachelhong-marketing/b2b-campaign-test-planner) → 4. Report (coming soon) → [5. Prove](https://github.com/rachelhong-marketing/b2b-pipeline-attribution-tool)
+> **1. Plan** → [2. Set up](https://github.com/rachelhong-marketing/b2b-paid-media-planner) → [3. Test](https://github.com/rachelhong-marketing/b2b-campaign-test-planner) → [4. Report](https://github.com/rachelhong-marketing/b2b-campaign-reporting-agent) → [5. Prove](https://github.com/rachelhong-marketing/b2b-pipeline-attribution-tool)
 
 An AI agent that takes a B2B marketing team from an approved master brief to launch-ready channel briefs and copy. It summarizes the brief and finds the gaps, drafts paid search, paid social and email briefs, reviews copy and creative, and checks keyword lists. It works from the team's own templates, brand rules, audience criteria and past results, not from generic best practice.
 
@@ -84,7 +84,7 @@ Five tools, one per step of a B2B campaign, from the brief to proving pipeline. 
 | 1. Plan | **B2B Campaign Assistant** (this repo) | Turn a master brief into channel briefs; review copy and creative before launch. |
 | 2. Set up | [B2B Paid Media Planner](https://github.com/rachelhong-marketing/b2b-paid-media-planner) | Plan channels and retargeting, then build and check tracking links before launch. |
 | 3. Test | [B2B Campaign Test Planner](https://github.com/rachelhong-marketing/b2b-campaign-test-planner) | Size tests on leads and MQLs, not clicks, and read the results. |
-| 4. Report | B2B Campaign Reporting Agent (coming soon) | Combine ad platform and CRM data, check the totals and draft insights. |
+| 4. Report | [B2B Campaign Reporting Agent](https://github.com/rachelhong-marketing/b2b-campaign-reporting-agent) | Combine ad platform and CRM data, check the totals and draft insights. |
 | 5. Prove | [B2B Pipeline Attribution Tool](https://github.com/rachelhong-marketing/b2b-pipeline-attribution-tool) | Check the CRM data can be trusted, then show sourced and influenced pipeline. |
 
 ## About the author
