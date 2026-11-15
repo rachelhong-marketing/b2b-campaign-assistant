@@ -1,6 +1,6 @@
 # Example output: master brief draft
 
-> What the campaign assistant returns for "Draft the master brief for the Q3 Clean Customer Data program from the H2 go-to-market plan." Made-up campaign. Sources: `knowledge/00-strategy/2026-h2-data-quality-gtm-plan.md`, the asset abstracts in `knowledge/06-assets/`, the brand guidelines and the audience file. It follows `knowledge/02-brief-templates/master-brief-template.md`. Anything not in the sources is marked CONFIRM or MISSING; the brief check result is at the end.
+> What the campaign assistant returns for "Turn the approved Q3 campaign plan into the master brief." Made-up campaign. Sources: the [master campaign plan](02-master-campaign-plan.md), the asset abstracts in `knowledge/06-assets/`, the brand guidelines and the audience file. It follows `knowledge/02-brief-templates/master-brief-template.md`. Anything not in the sources is marked CONFIRM or MISSING; the brief check result is at the end.
 
 # Master brief: 2026-Q3 Clean Customer Data
 
@@ -52,7 +52,7 @@ Create new pipeline from the 400 Q3 target accounts in retail and financial serv
 
 ## Creative concept and tone
 
-- **Concept:** "One customer, five records": the same person shown as five slightly different records, then merged into one. It uses the video's title so every ad looks like one campaign. [CONFIRM with the creative team: the plan doesn't set a concept]
+- **Concept:** "One customer, five records": the same person shown as five slightly different records, then merged into one. It uses the video's title so every ad looks like one campaign. [CONFIRM with the creative team: it comes from the video title in the plan, not a creative brief]
 - **Tone:** Plain, confident, practical. No hype (brand guidelines).
 
 ## Funnel stages
@@ -103,16 +103,16 @@ Why two start dates differ from launch:
 
 ## Brief check result
 
-`python3 -m assistant brief examples/01-master-brief-draft.md`
+`python3 -m assistant brief examples/03-master-brief-draft.md`
 
 ```
-Brief check: 01-master-brief-draft.md
+Brief check: 03-master-brief-draft.md
 4 gaps, 0 conflicts
 
 GAP      line 28: placeholder [MISSING: the plan says "TBD with sales operations"]: | Pipeline | [MISSING: the plan says "TBD with sales operations"] |
-GAP      line 55: placeholder [CONFIRM with the creative team: the plan doesn't set a concept]: - **Concept:** "One customer, five records": the same person shown as five slightly differ
+GAP      line 55: placeholder [CONFIRM with the creative team: it comes from the video title in the plan, not a creative brief]: - **Concept:** "One customer, five records": the same person shown as five slightly differ
 GAP      line 78: placeholder [MISSING: no email lead assigned for Q3]: | Nurture (4 emails) | Email | $0 | [MISSING: no email lead assigned for Q3] | 2026-07-01 
-GAP      line 81: placeholder [CONFIRM]: - Meta retargeting starts 2026-07-15 so there are two weeks of site visitors to retarget. 
+GAP      line 81: placeholder [CONFIRM]: - Meta retargeting starts 2026-07-15 so there are two weeks of site visitors to retarget.
 ```
 
 No conflicts: the tactic budgets add up to the $120,000 total and every tactic runs inside the campaign dates. The four gaps are the open questions above, marked on purpose so nobody mistakes a guess for a decision.

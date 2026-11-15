@@ -1,4 +1,4 @@
-"""Command line: brief, copy, keywords."""
+"""Command line: plan, brief, copy, keywords."""
 import argparse
 from collections import Counter
 from pathlib import Path
@@ -13,6 +13,8 @@ def main(argv=None):
     sub = ap.add_subparsers(dest="cmd", required=True)
     b = sub.add_parser("brief", help="find gaps and conflicts in a master brief (Markdown)")
     b.add_argument("path")
+    p = sub.add_parser("plan", help="find gaps and conflicts in a master campaign plan (Markdown)")
+    p.add_argument("path")
     c = sub.add_parser("copy", help="check ad and email copy (CSV: channel, ad, field, text)")
     c.add_argument("path")
     k = sub.add_parser("keywords", help="check a Google Ads keyword list (CSV: ad_group, keyword, match_type)")
@@ -22,11 +24,11 @@ def main(argv=None):
                    help="competitor brand terms CSV")
     a = ap.parse_args(argv)
 
-    if a.cmd == "brief":
+    if a.cmd in ("brief", "plan"):
         text = Path(a.path).read_text(encoding="utf-8")
-        found = brief.check(text)
+        found = brief.check(text, kind=a.cmd)
         counts = Counter(level for level, _, _ in found)
-        print(f"Brief check: {Path(a.path).name}")
+        print(f"{'Brief' if a.cmd == 'brief' else 'Plan'} check: {Path(a.path).name}")
         print(f"{counts.get('GAP', 0)} gaps, {counts.get('CONFLICT', 0)} conflicts\n")
         for level in ("CONFLICT", "GAP"):
             for lv, where, msg in found:

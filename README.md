@@ -4,55 +4,61 @@
 >
 > **1. Plan** → [2. Set up](https://github.com/rachelhong-marketing/b2b-paid-media-planner) → [3. Test](https://github.com/rachelhong-marketing/b2b-campaign-test-planner) → [4. Report](https://github.com/rachelhong-marketing/b2b-campaign-reporting-agent) → [5. Prove](https://github.com/rachelhong-marketing/b2b-pipeline-attribution-tool)
 
-An AI agent that takes a B2B marketing team from a go-to-market plan to launch-ready campaign briefs and copy. It drafts the master campaign brief, turns it into paid search, paid social and email briefs, brainstorms search keywords, and writes the landing page, search ads, social ads and emails from your asset abstract or landing page. Then it checks every draft, and reviews copy and keywords your team already wrote.
+An AI agent that helps a B2B marketing team plan and build a campaign, from the first idea to launch-ready copy. It brainstorms the campaign theme from your go-to-market plan, brand narrative and customer research, writes the master campaign plan and the master brief, then drafts the channel briefs, search keywords, landing page, and search, social and email copy. It checks every draft before anyone uses it, and reviews copy and keywords your team already wrote.
 
-It works from the team's own plan, templates, brand rules, audience criteria and past results, not from generic best practice. It runs as a Claude Code skill, with Python checks for anything that has to be exact (budget math, character limits, approved claims, keyword rules). There's also a Microsoft Copilot version for teams that work in Microsoft 365.
+It follows a [campaign planning framework](framework/campaign-planning-framework.md) and works from the team's own plans, templates, brand rules, audience criteria and past results, not generic best practice. It runs as a Claude Code skill, with Python checks for anything that has to be exact (budget math, offer dates, character limits, approved claims, keyword rules). There's also a Microsoft Copilot version for teams that work in Microsoft 365.
 
 All data here is made up. Fernhill Software is a fictional company.
 
 ## Why this exists
 
-Getting from a go-to-market plan to live ads takes a stack of documents: a master brief, four or five channel briefs, a keyword list, a landing page, and copy for every channel. It's slow, and the same mistakes slip through every time: budgets that don't add up, a persona sales doesn't sell to, an ad promoting a webinar that isn't published yet, a 34-character Google headline, a "3x faster" claim nobody can source, a keyword blocked by the team's own negative list.
+Most campaign problems start before the first ad is written. Teams jump to a theme before they've gathered the inputs, so it's either too product-led or too vague. Then the plan and briefs get written by hand, and the same mistakes slip through: budgets that don't add up, a persona sales doesn't sell to, a channel promoting a webinar that isn't published yet, a 34-character Google headline, a "3x faster" claim nobody can source.
 
 A general AI assistant writes fluent drafts but invents numbers and ignores your rules. This agent is built the other way around: your files are the source of truth, the checks are code and run on every draft, and anything it can't trace gets marked `[MISSING]` or `[CONFIRM]`.
 
 ## What it does
 
-| Step | You ask | You get |
-|---|---|---|
-| **1. Draft the master brief** | "Draft the Q3 master brief from the H2 go-to-market plan" | A master brief in your template: objective, KPIs, audience, message, funnel stages, tactics with budgets, owners and dates, plus open questions. Budgets add up and no tactic promotes an asset before it's ready. |
-| **2. Check a master brief** | "Summarize the Q3 master brief" | A one-page summary plus open questions: gaps, budget and date conflicts, personas not in the audience file, unapproved claims, and who answers each one |
-| **3. Draft channel briefs** | "Draft the paid search brief" | A brief in your template's structure, with targeting from your audience file and the past learning it applied |
-| **4. Brainstorm keywords** | "Brainstorm keywords for the search campaign" | Ad groups mapped to the brief's themes, keywords with match types, and negatives, as a CSV ready to upload |
-| **5. Draft the landing page** | "Draft the landing page from the playbook abstract" | Page title, headline, subheadline, what you get, how it works, proof, form and button, written to your landing page template |
-| **6. Draft ad and email copy** | "Write the search, LinkedIn, Meta and email copy" | Search ads, social ads and emails within every limit, using approved proof points and past learnings, with a tracking value per ad |
-| **7. Review copy** | "Review this LinkedIn copy" | Score (1-5), what works, what to fix with a rewrite that passes the limits, and risks |
-| **8. Review keywords** | "Check this keyword list" | Duplicates, keywords blocked by negatives, length and match type errors, competitor terms, and ad groups competing |
+| Phase | Step | You ask | You get |
+|---|---|---|---|
+| **Plan** | 1. Campaign themes | "Brainstorm Q3 campaign themes from our plan, brand narrative and research" | 2 or 3 theme options, each tied to the buyer assumption it challenges and the research behind it, scored on three tests, with a recommendation and an agenda for the team's brainstorm |
+| | 2. Master campaign plan | "Write the Q3 campaign plan with option 1" | Goals and KPIs, audience priorities, theme, messaging pillars, offers by funnel stage, channel mix and budget, ABM plan, timeline and measurement |
+| | 3. Master brief | "Turn the plan into the master brief" | The one-page hand-off to channel owners: audience, message, CTA, assets, tactics with budgets, owners and dates |
+| | 4. Check a brief | "Check this master brief" | A summary plus open questions: gaps, budget and date conflicts, personas not in the audience file, unapproved claims, and who answers each one |
+| **Brief** | 5. Channel briefs | "Draft the paid search brief" | A brief in your template, with targeting from your audience file and the past learning it applied |
+| **Create** | 6. Keywords | "Brainstorm keywords for the search campaign" | Ad groups mapped to the brief, keywords with match types, and negatives, as a CSV ready to upload |
+| | 7. Landing page | "Draft the landing page from the playbook abstract" | Page title, headline, what you get, how it works, proof, form and button, written to your template |
+| | 8. Ad and email copy | "Write the search, LinkedIn, Meta and email copy" | Copy within every limit, using approved proof points and past learnings, with a tracking value per ad |
+| **Review** | 9. Copy | "Review this LinkedIn copy" | Score (1-5), what works, what to fix with a rewrite that passes the limits, and risks |
+| | 10. Keywords | "Check this keyword list" | Duplicates, keywords blocked by negatives, length and match type errors, competitor terms, and ad groups competing |
 
 See the outputs on the sample campaign in [`examples/`](examples/):
 
-1. [Master brief draft](examples/01-master-brief-draft.md), from the [go-to-market plan](knowledge/00-strategy/2026-h2-data-quality-gtm-plan.md)
-2. [Master brief check](examples/02-master-brief-check.md), on a hand-written brief with planted problems
-3. [Paid search brief](examples/03-paid-search-brief.md)
-4. [Keyword draft](examples/04-keyword-draft.md)
-5. [Landing page draft](examples/05-landing-page-draft.md), from the [asset abstract](knowledge/06-assets/customer-data-cleanup-playbook-abstract.md)
-6. [Ad and email copy drafts](examples/06-copy-drafts.md)
-7. [Copy review](examples/07-copy-review.md)
+1. [Campaign theme options](examples/01-campaign-themes.md), from the [go-to-market plan](knowledge/00-strategy/2026-h2-data-quality-gtm-plan.md), [brand narrative](knowledge/00-strategy/brand-narrative-2026.md) and [customer research](knowledge/00-strategy/customer-research-2026-h1.md)
+2. [Master campaign plan](examples/02-master-campaign-plan.md)
+3. [Master brief](examples/03-master-brief-draft.md)
+4. [Master brief check](examples/04-master-brief-check.md), on a hand-written brief with planted problems
+5. [Paid search brief](examples/05-paid-search-brief.md)
+6. [Keyword draft](examples/06-keyword-draft.md)
+7. [Landing page draft](examples/07-landing-page-draft.md), from the [asset abstract](knowledge/06-assets/customer-data-cleanup-playbook-abstract.md)
+8. [Ad and email copy drafts](examples/08-copy-drafts.md)
+9. [Copy review](examples/09-copy-review.md)
 
-Every draft in steps 1, 4, 5 and 6 passed the checks below; the check output is at the end of each example.
+Every draft in steps 2, 3, 6, 7 and 8 passed the checks below; the check output is at the end of each example.
 
 ## Use it with Claude Code
 
 Download the repo, open the folder in Claude Code, and ask:
 
-- "Draft the Q3 Clean Customer Data master brief from the H2 go-to-market plan."
+- "Brainstorm campaign themes for Q3 from the strategy folder."
+- "Write the Q3 Clean Customer Data campaign plan with option 1."
+- "Turn the plan into the master brief."
 - "Draft a paid social brief for LinkedIn."
 - "Brainstorm keywords and negatives for the search campaign."
 - "Draft the landing page for the Customer Data Cleanup Playbook."
 - "Write two LinkedIn ads and two nurture emails from the landing page."
 - "Review sample-data/ad-copy-sample.csv."
 
-The skill is in [`.claude/skills/campaign-assistant/SKILL.md`](.claude/skills/campaign-assistant/SKILL.md). To use it for your own team, replace the files in [`knowledge/`](knowledge/) and [`rules/`](rules/) with yours: your go-to-market plan, templates, brand guidelines, audience, past results and asset abstracts.
+The skill is in [`.claude/skills/campaign-assistant/SKILL.md`](.claude/skills/campaign-assistant/SKILL.md). To use it for your own team, replace the files in [`knowledge/`](knowledge/) and [`rules/`](rules/) with yours: your go-to-market plan, brand narrative, research, templates, brand guidelines, audience, past results and asset abstracts.
 
 ## Use it in Microsoft Copilot
 
@@ -63,17 +69,19 @@ The skill is in [`.claude/skills/campaign-assistant/SKILL.md`](.claude/skills/ca
 Python 3 only, nothing to install.
 
 ```bash
+python3 -m assistant plan examples/02-master-campaign-plan.md
 python3 -m assistant brief knowledge/01-campaign-plans/2026-q3-clean-customer-data-master-brief.md
 python3 -m assistant copy sample-data/ad-copy-sample.csv
 python3 -m assistant keywords sample-data/keywords-sample.csv --negatives sample-data/negative-keywords.csv
 python3 -m unittest discover -s tests
 ```
 
-| Check | Runs on | What it catches on the sample data |
+| Check | Runs on | What it catches |
 |---|---|---|
-| `brief` | Master briefs | Tactic budgets add up to $130,000 vs. a $120,000 total; a tactic that starts before launch; no pipeline target; no owner for the nurture; [TBD] and [CONFIRM] placeholders |
-| `copy` | Ads, emails and landing pages | Google headlines over 30 characters; too few headlines and descriptions; "3x" and "500+" claims that aren't approved proof points; avoid-list words ("best-in-class", "revolutionary"); wrong terminology ("ebook"); ALL CAPS and "!!" in an email subject |
-| `keywords` | Keyword lists | Duplicates; keywords blocked by the negatives "free" and "jobs"; a 16-word keyword; a misspelled match type; competitor brand terms; one keyword in two ad groups |
+| `plan` | Master campaign plans | Missing sections or fields; channel budgets that don't add up to the total; a channel that starts before the offer it promotes is ready; missing targets and owners |
+| `brief` | Master briefs | On the sample: tactic budgets add up to $130,000 vs. a $120,000 total; a tactic that starts before launch; no pipeline target; no owner for the nurture; [TBD] and [CONFIRM] placeholders |
+| `copy` | Ads, emails and landing pages | On the sample: Google headlines over 30 characters; too few headlines and descriptions; "3x" and "500+" claims that aren't approved proof points; avoid-list words ("best-in-class", "revolutionary"); wrong terminology ("ebook"); ALL CAPS and "!!" in an email subject |
+| `keywords` | Keyword lists | On the sample: duplicates; keywords blocked by the negatives "free" and "jobs"; a 16-word keyword; a misspelled match type; competitor brand terms; one keyword in two ad groups |
 
 Character limits live in [`rules/copy-limits.csv`](rules/copy-limits.csv) and brand words in [`rules/brand-words.csv`](rules/brand-words.csv). Platform limits change, so check them against current platform documentation.
 
@@ -81,9 +89,10 @@ Character limits live in [`rules/copy-limits.csv`](rules/copy-limits.csv) and br
 
 | Folder | What it holds |
 |---|---|
-| `knowledge/00-strategy/` | A go-to-market plan, the starting point for a master brief |
+| `framework/` | The campaign planning framework the agent follows |
+| `knowledge/00-strategy/` | Go-to-market plan, brand narrative and customer research: the inputs for themes and the plan |
 | `knowledge/01-campaign-plans/` | A hand-written master brief with planted gaps |
-| `knowledge/02-brief-templates/` | Master brief, paid search, paid social, email and landing page templates, plus an approved example |
+| `knowledge/02-brief-templates/` | Theme, campaign plan, master brief, channel brief and landing page templates, plus an approved example |
 | `knowledge/03-brand-and-channel/` | Voice, terminology, approved proof points, channel best practices |
 | `knowledge/04-audience/` | Target account criteria, personas, competitors |
 | `knowledge/05-performance/` | Creative performance log |
@@ -101,7 +110,7 @@ Five tools, one per step of a B2B campaign, from the brief to proving pipeline. 
 
 | Step | Tool | What it does |
 |---|---|---|
-| 1. Plan | **B2B Campaign Assistant** (this repo) | Draft the master brief, channel briefs, keywords, landing page and ad copy from your go-to-market plan, and check them before launch. |
+| 1. Plan | **B2B Campaign Assistant** (this repo) | Brainstorm the campaign theme, write the campaign plan and master brief, then draft channel briefs, keywords, landing page and ad copy, all checked before launch. |
 | 2. Set up | [B2B Paid Media Planner](https://github.com/rachelhong-marketing/b2b-paid-media-planner) | Plan channels and retargeting, then build and check tracking links before launch. |
 | 3. Test | [B2B Campaign Test Planner](https://github.com/rachelhong-marketing/b2b-campaign-test-planner) | Size tests on leads and MQLs, not clicks, and read the results. |
 | 4. Report | [B2B Campaign Reporting Agent](https://github.com/rachelhong-marketing/b2b-campaign-reporting-agent) | Consolidate ad platform and CRM data into one file, check every channel and funnel stage for gaps, and draft insights. |

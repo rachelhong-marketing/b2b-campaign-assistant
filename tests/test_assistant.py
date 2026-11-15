@@ -98,7 +98,7 @@ class Drafts(unittest.TestCase):
     DRAFTS = ROOT / "examples" / "drafts"
 
     def test_master_brief_draft_has_no_conflicts(self):
-        found = brief.check((ROOT / "examples" / "01-master-brief-draft.md").read_text())
+        found = brief.check((ROOT / "examples" / "03-master-brief-draft.md").read_text())
         self.assertEqual([f for f in found if f[0] == brief.CONFLICT], [])
         gaps = " ".join(m for _, _, m in found)
         self.assertIn("[MISSING: the plan says", gaps)
@@ -122,6 +122,35 @@ class Drafts(unittest.TestCase):
                  ("bullet", "One")]]
         msgs = " ".join(m for _, _, m in copy_rules.check(rows)[("landing-page", "p")])
         self.assertIn("only 1 bullet(s); at least 3", msgs)
+
+
+class Plan(unittest.TestCase):
+    PLAN = ROOT / "examples" / "02-master-campaign-plan.md"
+
+    def check(self, text):
+        return brief.check(text, kind="plan")
+
+    def test_example_plan_has_no_conflicts(self):
+        self.assertEqual([f for f in self.check(self.PLAN.read_text()) if f[0] == brief.CONFLICT], [])
+
+    def test_channel_before_its_offer_is_ready(self):
+        text = self.PLAN.read_text().replace("| Demand gen lead | 2026-08-03", "| Demand gen lead | 2026-07-15")
+        msgs = " ".join(m for lv, _, m in self.check(text) if lv == brief.CONFLICT)
+        self.assertIn("Content syndication starts 2026-07-15", msgs)
+        self.assertIn("isn't ready until 2026-08-03", msgs)
+
+    def test_multi_stage_channel_can_start_with_first_ready_offer(self):
+        msgs = " ".join(m for _, _, m in self.check(self.PLAN.read_text()))
+        self.assertNotIn("Email nurture starts", msgs)
+
+    def test_channel_budgets_must_add_up(self):
+        text = self.PLAN.read_text().replace("| Google Search | Interest | $30,000", "| Google Search | Interest | $40,000")
+        msgs = " ".join(m for lv, _, m in self.check(text) if lv == brief.CONFLICT)
+        self.assertIn("channel budgets add up to $130,000", msgs)
+
+    def test_missing_theme(self):
+        text = self.PLAN.read_text().replace("- **Theme:** One customer, one record, and it stays that way\n", "")
+        self.assertIn(("GAP", "theme", "missing."), self.check(text))
 
 
 if __name__ == "__main__":
