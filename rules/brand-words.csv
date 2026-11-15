@@ -1,0 +1,16 @@
+term,type,suggestion
+best-in-class,avoid,Say what it does better and prove it
+world-class,avoid,Say what it does better and prove it
+revolutionary,avoid,Describe the actual change
+game-changer,avoid,Describe the actual change
+cutting-edge,avoid,Name the capability
+seamless,avoid,Say how long setup takes
+synergy,avoid,Say what the two things do together
+leverage,avoid,Use
+guarantee,needs-proof,Needs legal approval
+#1,needs-proof,Needs a named source and date
+leading,needs-proof,Needs a named source (analyst report or ranking)
+fastest,needs-proof,Needs a benchmark source
+data cleansing tool,terminology,Data Quality Platform
+quiz,terminology,Data Readiness Assessment
+AI-powered data,terminology,AI-ready data

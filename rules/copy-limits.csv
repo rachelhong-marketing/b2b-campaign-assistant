@@ -1,0 +1,10 @@
+channel,field,max_chars,limit_type,min_count,max_count,note
+google-search,headline,30,hard,3,15,Responsive search ad headline
+google-search,description,90,hard,2,4,Responsive search ad description
+google-search,path,15,hard,0,2,Display URL path field
+linkedin,intro_text,150,recommended,,,Text after about 150 characters is cut off on desktop; platform max is 600
+linkedin,headline,70,recommended,,,Platform max is 200
+meta,primary_text,125,recommended,,,Longer text is cut off with See more
+meta,headline,40,recommended,,,Can be cut off on some placements
+email,subject,50,recommended,,,Brand guideline; longer subjects get cut off on mobile
+email,preheader,100,recommended,,,Many inboxes show 40 to 100 characters

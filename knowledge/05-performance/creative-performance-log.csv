@@ -1,0 +1,9 @@
+campaign,channel,ad,format,headline,cta,start,end,spend,impressions,clicks,leads,mqls,takeaway
+2025-Q4 Data Health,LinkedIn,A,Single image,Is your data costing you deals?,Download,2025-10-06,2025-12-19,14000,610000,4270,128,41,Question headline: higher CTR than statement version B
+2025-Q4 Data Health,LinkedIn,B,Single image,Bad data is costing you deals,Download,2025-10-06,2025-12-19,14000,598000,3110,96,33,Statement headline: lower CTR; similar MQL rate per lead
+2025-Q4 Data Health,LinkedIn,C,Video 30s,Your data team is drowning,Learn more,2025-10-06,2025-12-19,9000,402000,1610,22,6,Video drove views but few leads; use for awareness and retargeting pools
+2026-Q1 Cost Control,LinkedIn,A,Single image,What does bad data cost you?,Download,2026-01-12,2026-03-27,14000,575000,4140,131,46,Question headline won again on CTR; leads per 1000 clicks about the same
+2026-Q1 Cost Control,LinkedIn,B,Single image,Find the cost of bad data in 2 minutes,Download,2026-01-12,2026-03-27,14000,560000,3530,118,44,Specific time promise held up well on MQLs
+2026-Q1 Cost Control,Google Search,RSA-1,Responsive search ad,Data Quality Platform | Fix Bad Data Fast,Get a demo,2026-01-12,2026-03-27,18000,64000,3840,96,38,Demo CTA converted fewer leads than a free tool CTA in Q4
+2025-Q4 Data Health,Google Search,RSA-1,Responsive search ad,Free Data Health Check,Start free check,2025-10-06,2025-12-19,16000,59000,3720,141,47,Free tool offer beat demo offer on leads per click
+2026-Q1 Cost Control,Email,Email 2,Email,Subject: What bad data cost one retailer,Read the story,2026-02-10,2026-02-10,0,18000,610,44,19,Customer story subject lines got the most clicks in the nurture
