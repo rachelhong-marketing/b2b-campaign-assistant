@@ -6,7 +6,7 @@
 - **Industries:** Retail, Financial Services, Manufacturing
 - **Company size:** 1,000 to 10,000 employees
 - **Regions:** United States, Canada
-- **Intent topics:** data quality, master data management, data governance, AI readiness
+- **Intent topics:** data quality, master data management, data governance, customer data deduplication
 - **Exclude:** current customers, open opportunities in late stage, competitors (see `competitors.csv`)
 
 ## Personas

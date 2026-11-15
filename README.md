@@ -12,7 +12,7 @@ All data here is made up. Fernhill Software is a fictional company.
 
 ## Why this exists
 
-Getting from a go-to-market plan to live ads takes a stack of documents: a master brief, four or five channel briefs, a keyword list, a landing page, and copy for every channel. It's slow, and the same mistakes slip through every time: budgets that don't add up, a persona sales doesn't sell to, an ad promoting a guide that isn't published yet, a 34-character Google headline, a "3x faster" claim nobody can source, a keyword blocked by the team's own negative list.
+Getting from a go-to-market plan to live ads takes a stack of documents: a master brief, four or five channel briefs, a keyword list, a landing page, and copy for every channel. It's slow, and the same mistakes slip through every time: budgets that don't add up, a persona sales doesn't sell to, an ad promoting a webinar that isn't published yet, a 34-character Google headline, a "3x faster" claim nobody can source, a keyword blocked by the team's own negative list.
 
 A general AI assistant writes fluent drafts but invents numbers and ignores your rules. This agent is built the other way around: your files are the source of truth, the checks are code and run on every draft, and anything it can't trace gets marked `[MISSING]` or `[CONFIRM]`.
 
@@ -24,7 +24,7 @@ A general AI assistant writes fluent drafts but invents numbers and ignores your
 | **2. Check a master brief** | "Summarize the Q3 master brief" | A one-page summary plus open questions: gaps, budget and date conflicts, personas not in the audience file, unapproved claims, and who answers each one |
 | **3. Draft channel briefs** | "Draft the paid search brief" | A brief in your template's structure, with targeting from your audience file and the past learning it applied |
 | **4. Brainstorm keywords** | "Brainstorm keywords for the search campaign" | Ad groups mapped to the brief's themes, keywords with match types, and negatives, as a CSV ready to upload |
-| **5. Draft the landing page** | "Draft the landing page from the assessment abstract" | Page title, headline, subheadline, what you get, how it works, proof, form and button, written to your landing page template |
+| **5. Draft the landing page** | "Draft the landing page from the playbook abstract" | Page title, headline, subheadline, what you get, how it works, proof, form and button, written to your landing page template |
 | **6. Draft ad and email copy** | "Write the search, LinkedIn, Meta and email copy" | Search ads, social ads and emails within every limit, using approved proof points and past learnings, with a tracking value per ad |
 | **7. Review copy** | "Review this LinkedIn copy" | Score (1-5), what works, what to fix with a rewrite that passes the limits, and risks |
 | **8. Review keywords** | "Check this keyword list" | Duplicates, keywords blocked by negatives, length and match type errors, competitor terms, and ad groups competing |
@@ -35,7 +35,7 @@ See the outputs on the sample campaign in [`examples/`](examples/):
 2. [Master brief check](examples/02-master-brief-check.md), on a hand-written brief with planted problems
 3. [Paid search brief](examples/03-paid-search-brief.md)
 4. [Keyword draft](examples/04-keyword-draft.md)
-5. [Landing page draft](examples/05-landing-page-draft.md), from the [asset abstract](knowledge/06-assets/data-readiness-assessment-abstract.md)
+5. [Landing page draft](examples/05-landing-page-draft.md), from the [asset abstract](knowledge/06-assets/customer-data-cleanup-playbook-abstract.md)
 6. [Ad and email copy drafts](examples/06-copy-drafts.md)
 7. [Copy review](examples/07-copy-review.md)
 
@@ -45,10 +45,10 @@ Every draft in steps 1, 4, 5 and 6 passed the checks below; the check output is 
 
 Download the repo, open the folder in Claude Code, and ask:
 
-- "Draft the Q3 Data Readiness master brief from the H2 go-to-market plan."
+- "Draft the Q3 Clean Customer Data master brief from the H2 go-to-market plan."
 - "Draft a paid social brief for LinkedIn."
 - "Brainstorm keywords and negatives for the search campaign."
-- "Draft the landing page for the Data Readiness Assessment."
+- "Draft the landing page for the Customer Data Cleanup Playbook."
 - "Write two LinkedIn ads and two nurture emails from the landing page."
 - "Review sample-data/ad-copy-sample.csv."
 
@@ -63,7 +63,7 @@ The skill is in [`.claude/skills/campaign-assistant/SKILL.md`](.claude/skills/ca
 Python 3 only, nothing to install.
 
 ```bash
-python3 -m assistant brief knowledge/01-campaign-plans/2026-q3-data-readiness-master-brief.md
+python3 -m assistant brief knowledge/01-campaign-plans/2026-q3-clean-customer-data-master-brief.md
 python3 -m assistant copy sample-data/ad-copy-sample.csv
 python3 -m assistant keywords sample-data/keywords-sample.csv --negatives sample-data/negative-keywords.csv
 python3 -m unittest discover -s tests
@@ -72,7 +72,7 @@ python3 -m unittest discover -s tests
 | Check | Runs on | What it catches on the sample data |
 |---|---|---|
 | `brief` | Master briefs | Tactic budgets add up to $130,000 vs. a $120,000 total; a tactic that starts before launch; no pipeline target; no owner for the nurture; [TBD] and [CONFIRM] placeholders |
-| `copy` | Ads, emails and landing pages | Google headlines over 30 characters; too few headlines and descriptions; "3x" and "500+" claims that aren't approved proof points; avoid-list words ("best-in-class", "revolutionary"); wrong terminology ("quiz"); ALL CAPS and "!!" in an email subject |
+| `copy` | Ads, emails and landing pages | Google headlines over 30 characters; too few headlines and descriptions; "3x" and "500+" claims that aren't approved proof points; avoid-list words ("best-in-class", "revolutionary"); wrong terminology ("ebook"); ALL CAPS and "!!" in an email subject |
 | `keywords` | Keyword lists | Duplicates; keywords blocked by the negatives "free" and "jobs"; a 16-word keyword; a misspelled match type; competitor brand terms; one keyword in two ad groups |
 
 Character limits live in [`rules/copy-limits.csv`](rules/copy-limits.csv) and brand words in [`rules/brand-words.csv`](rules/brand-words.csv). Platform limits change, so check them against current platform documentation.
@@ -87,7 +87,7 @@ Character limits live in [`rules/copy-limits.csv`](rules/copy-limits.csv) and br
 | `knowledge/03-brand-and-channel/` | Voice, terminology, approved proof points, channel best practices |
 | `knowledge/04-audience/` | Target account criteria, personas, competitors |
 | `knowledge/05-performance/` | Creative performance log |
-| `knowledge/06-assets/` | Asset abstracts for the assessment and the guide |
+| `knowledge/06-assets/` | Asset abstracts for the playbook and the webinar |
 | `rules/` | Character limits and brand words used by the checks |
 | `assistant/` | The Python checks |
 | `sample-data/` | Ad copy, keywords and negatives with planted problems |

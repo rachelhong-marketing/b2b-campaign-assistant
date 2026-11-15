@@ -1,45 +1,45 @@
 channel,ad,field,text
-google-search,RSA-1 Data readiness,headline,Is Your Data Ready for AI?
-google-search,RSA-1 Data readiness,headline,Data Readiness Assessment
-google-search,RSA-1 Data readiness,headline,Get Your Score in 3 Minutes
-google-search,RSA-1 Data readiness,headline,Free 3-Minute Assessment
-google-search,RSA-1 Data readiness,headline,See Your Top 3 Data Fixes
-google-search,RSA-1 Data readiness,headline,Know Before Your AI Project
-google-search,RSA-1 Data readiness,headline,Score Your Data From 0 to 100
-google-search,RSA-1 Data readiness,headline,Built for Data Leaders
-google-search,RSA-1 Data readiness,headline,Fix Duplicate Customer Data
-google-search,RSA-1 Data readiness,headline,Cut Data Cleanup Time by 40%
-google-search,RSA-1 Data readiness,description,Find out if your customer data is ready for AI before you start. Takes 3 minutes.
-google-search,RSA-1 Data readiness,description,"Get a readiness score and the three fixes that matter most, ranked by impact."
-google-search,RSA-1 Data readiness,description,Teams spend 30% of their week fixing data. See where yours stands.
-google-search,RSA-1 Data readiness,description,"Scores completeness, duplicates, consistency and governance. Free report."
-google-search,RSA-1 Data readiness,path,data-readiness
-google-search,RSA-1 Data readiness,path,assessment
-google-search,RSA-2 Data quality for AI,headline,Data Quality for AI
-google-search,RSA-2 Data quality for AI,headline,Is Your Data AI-Ready?
-google-search,RSA-2 Data quality for AI,headline,Trust the Data Your AI Uses
-google-search,RSA-2 Data quality for AI,headline,Find Duplicates and Gaps
-google-search,RSA-2 Data quality for AI,headline,Data Readiness Assessment
-google-search,RSA-2 Data quality for AI,headline,Get Your Score in 3 Minutes
-google-search,RSA-2 Data quality for AI,headline,Setup in Under Two Weeks
-google-search,RSA-2 Data quality for AI,headline,Cut Data Cleanup Time by 40%
-google-search,RSA-2 Data quality for AI,headline,Free 3-Minute Assessment
-google-search,RSA-2 Data quality for AI,description,"AI projects stall on duplicated, incomplete data. See where you stand in 3 minutes."
-google-search,RSA-2 Data quality for AI,description,Customers cut data cleanup time by 40%. Start with a free readiness score.
-google-search,RSA-2 Data quality for AI,description,Take the Data Readiness Assessment and get the top three fixes for your data.
-google-search,RSA-2 Data quality for AI,path,ai-data
-google-search,RSA-2 Data quality for AI,path,assessment
-linkedin,LI-A question,intro_text,AI projects stall when customer data is duplicated or incomplete. Find out if yours is ready in 3 minutes.
-linkedin,LI-A question,headline,Is your customer data ready for AI?
-linkedin,LI-B time promise,intro_text,"Get a readiness score for your customer data, plus the three fixes that matter most. It takes 3 minutes."
-linkedin,LI-B time promise,headline,Score your data's AI readiness in 3 minutes
-meta,Meta-R1 retargeting,primary_text,Still planning your AI project? Take the 3-minute Data Readiness Assessment and see what to fix first.
-meta,Meta-R1 retargeting,headline,Get your data readiness score
-email,Email-1 score under 50,subject,"Your readiness score, and what to fix first"
-email,Email-1 score under 50,preheader,Walk through your top three fixes with a data specialist.
-email,Email-1 score under 50,body,"Hi {first name}, thanks for taking the Data Readiness Assessment. Your score shows a few areas to fix before an AI project can rely on this data, and your report ranks the top three. A data specialist can walk you through them, show how other teams fixed the same problems, and answer questions about your setup. Customers cut data cleanup time by 40%, and setup takes under two weeks. You can download your full report anytime from your results page."
-email,Email-1 score under 50,cta,Book your demo
-email,Email-2 guide,subject,5 signs your data isn't ready for AI
-email,Email-2 guide,preheader,"A quick self-check for each one, plus the first step to take."
-email,Email-2 guide,body,"Hi {first name}, your Data Readiness Assessment showed where your customer data stands today. Our new guide goes one step further: five signs your data isn't ready for AI, each with a quick self-check and one first step. The most common sign is the same customer showing up as several records. Teams spend 30% of their week fixing problems like this. The guide shows how to keep the fixes from wearing off."
-email,Email-2 guide,cta,Read the guide
+google-search,RSA-1 Duplicate customer data,headline,Duplicate Customer Records?
+google-search,RSA-1 Duplicate customer data,headline,Merge Duplicates in 30 Days
+google-search,RSA-1 Duplicate customer data,headline,Free Customer Data Playbook
+google-search,RSA-1 Duplicate customer data,headline,"One Customer, One Record"
+google-search,RSA-1 Duplicate customer data,headline,Find and Merge Duplicates
+google-search,RSA-1 Duplicate customer data,headline,Keep Duplicates From Returning
+google-search,RSA-1 Duplicate customer data,headline,Cut Data Cleanup Time by 40%
+google-search,RSA-1 Duplicate customer data,headline,Built for Data Leaders
+google-search,RSA-1 Duplicate customer data,headline,Get the Free Cleanup Playbook
+google-search,RSA-1 Duplicate customer data,headline,Reports That Finally Match
+google-search,RSA-1 Duplicate customer data,description,"Find, merge and stop duplicate customer records with a free 30-day cleanup plan."
+google-search,RSA-1 Duplicate customer data,description,"Match rules, a safe merge order and a checklist for your team. Free playbook."
+google-search,RSA-1 Duplicate customer data,description,Teams spend 30% of their week fixing data. Get the plan to stop the duplicates.
+google-search,RSA-1 Duplicate customer data,description,Customers cut data cleanup time by 40%. Start with the free playbook.
+google-search,RSA-1 Duplicate customer data,path,duplicates
+google-search,RSA-1 Duplicate customer data,path,playbook
+google-search,RSA-2 Cleanup plan,headline,Customer Data Cleanup Plan
+google-search,RSA-2 Cleanup plan,headline,A 30-Day Data Cleanup Plan
+google-search,RSA-2 Cleanup plan,headline,Free Customer Data Playbook
+google-search,RSA-2 Cleanup plan,headline,Data Cleanup Checklist
+google-search,RSA-2 Cleanup plan,headline,Merge Records Without Errors
+google-search,RSA-2 Cleanup plan,headline,Setup in Under Two Weeks
+google-search,RSA-2 Cleanup plan,headline,Cut Data Cleanup Time by 40%
+google-search,RSA-2 Cleanup plan,headline,"One Customer, One Record"
+google-search,RSA-2 Cleanup plan,headline,Built for Data Leaders
+google-search,RSA-2 Cleanup plan,description,A step-by-step plan to clean up customer records in 30 days. Download it free.
+google-search,RSA-2 Cleanup plan,description,Customers cut data cleanup time by 40%. See how in the free cleanup playbook.
+google-search,RSA-2 Cleanup plan,description,"Measure, match, merge and monitor. Get the free Customer Data Cleanup Playbook."
+google-search,RSA-2 Cleanup plan,path,data-cleanup
+google-search,RSA-2 Cleanup plan,path,playbook
+linkedin,LI-A question,intro_text,"Is the same customer in your CRM five times? Get the free 30-day plan to find, merge and stop duplicate records."
+linkedin,LI-A question,headline,"One customer, five records?"
+linkedin,LI-B time promise,intro_text,"Clean up duplicate customer records in 30 days. The free playbook gives you match rules, a safe merge order and a checklist."
+linkedin,LI-B time promise,headline,Merge duplicate customer records in 30 days
+meta,Meta-R1 retargeting,primary_text,Still merging duplicate records by hand? The free Customer Data Cleanup Playbook has a 30-day plan.
+meta,Meta-R1 retargeting,headline,Get the cleanup playbook
+email,Email-1 target accounts,subject,"Your 30-day plan, and a faster way to start"
+email,Email-1 target accounts,preheader,Walk through your duplicate records with a data specialist.
+email,Email-1 target accounts,body,"Hi {first name}, thanks for downloading the Customer Data Cleanup Playbook. Week one is about measuring how many duplicate records you have. A data specialist can do that step with you on your own data, show how other teams set their match rules, and answer questions about your systems. Customers cut data cleanup time by 40%, and setup takes under two weeks. The playbook stays in your inbox if you'd rather start on your own."
+email,Email-1 target accounts,cta,Book your demo
+email,Email-2 webinar,subject,How a regional bank cleaned up its records
+email,Email-2 webinar,preheader,"30 minutes, on demand: match rules, merge order and who owns it now."
+email,Email-2 webinar,body,"Hi {first name}, the playbook gives you the plan. This webinar shows it working. A regional bank's data lead walks through how they found their duplicate customer records, agreed on match rules with finance and marketing, and merged records without breaking month-end reports. Teams spend 30% of their week fixing data. This is how one team got that time back."
+email,Email-2 webinar,cta,Watch the webinar

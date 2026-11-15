@@ -1,14 +1,15 @@
 channel,ad,field,text
-landing-page,assessment-page,meta_title,Data Readiness Assessment | Fernhill Software
-landing-page,assessment-page,meta_description,Find out if your customer data is ready for AI. Take the free 3-minute assessment and get your score and the top three fixes.
-landing-page,assessment-page,headline,Is your customer data ready for AI?
-landing-page,assessment-page,subheadline,"Take the 3-minute Data Readiness Assessment. Get a score from 0 to 100 and the three fixes that matter most, before your AI project starts."
-landing-page,assessment-page,bullet,Your readiness score from 0 to 100
-landing-page,assessment-page,bullet,"A score for each area: completeness, duplicates, consistency and governance"
-landing-page,assessment-page,bullet,"The top three fixes to make first, ranked by impact"
-landing-page,assessment-page,bullet,A report you can download and share with your team
-landing-page,assessment-page,step,Answer 15 questions about your customer data. It takes about 3 minutes.
-landing-page,assessment-page,step,See your score and the area holding you back most.
-landing-page,assessment-page,step,Get the full report with your top three fixes.
-landing-page,assessment-page,proof,"Teams spend 30% of their week fixing data (2025 customer survey, n=120)"
-landing-page,assessment-page,cta,Take the assessment
+landing-page,playbook-page,meta_title,Customer Data Cleanup Playbook | Fernhill Software
+landing-page,playbook-page,meta_description,"A free 30-day plan to find, merge and stop duplicate customer records. Get the Customer Data Cleanup Playbook."
+landing-page,playbook-page,headline,"One customer, one record. Here's the 30-day plan."
+landing-page,playbook-page,subheadline,"The free Customer Data Cleanup Playbook shows how to find duplicate customer records, merge them safely and keep them from coming back."
+landing-page,playbook-page,bullet,How to measure how many duplicate records you have
+landing-page,playbook-page,bullet,"Match rules for ""same customer"" across your CRM, billing and support systems"
+landing-page,playbook-page,bullet,A safe order to merge records without breaking your reports
+landing-page,playbook-page,bullet,How to assign an owner so duplicates don't come back
+landing-page,playbook-page,bullet,A one-page checklist to share with your team
+landing-page,playbook-page,step,Fill in the short form.
+landing-page,playbook-page,step,Get the playbook by email and download it right away.
+landing-page,playbook-page,step,Start with week one: measure your duplicates.
+landing-page,playbook-page,proof,"Teams spend 30% of their week fixing data (2025 customer survey, n=120)"
+landing-page,playbook-page,cta,Get the playbook

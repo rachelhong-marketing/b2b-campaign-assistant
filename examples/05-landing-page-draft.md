@@ -1,34 +1,35 @@
 # Example output: landing page draft
 
-> What the campaign assistant returns for "Draft the landing page for the Data Readiness Assessment." Made-up campaign. Built from [`knowledge/06-assets/data-readiness-assessment-abstract.md`](../knowledge/06-assets/data-readiness-assessment-abstract.md), following `knowledge/02-brief-templates/landing-page-template.md`. The copy is also in [`drafts/landing-page-draft.csv`](drafts/landing-page-draft.csv) so the check can read it.
+> What the campaign assistant returns for "Draft the landing page for the Customer Data Cleanup Playbook." Made-up campaign. Built from [`knowledge/06-assets/customer-data-cleanup-playbook-abstract.md`](../knowledge/06-assets/customer-data-cleanup-playbook-abstract.md), following `knowledge/02-brief-templates/landing-page-template.md`. The copy is also in [`drafts/landing-page-draft.csv`](drafts/landing-page-draft.csv) so the check can read it.
 
 ## Search result
 
-**Data Readiness Assessment | Fernhill Software**  
-Find out if your customer data is ready for AI. Take the free 3-minute assessment and get your score and the top three fixes.
+**Customer Data Cleanup Playbook | Fernhill Software**  
+A free 30-day plan to find, merge and stop duplicate customer records. Get the Customer Data Cleanup Playbook.
 
 ## Hero
 
-### Is your customer data ready for AI?
+### One customer, one record. Here's the 30-day plan.
 
-Take the 3-minute Data Readiness Assessment. Get a score from 0 to 100 and the three fixes that matter most, before your AI project starts.
+The free Customer Data Cleanup Playbook shows how to find duplicate customer records, merge them safely and keep them from coming back.
 
-**[ Take the assessment ]**
+**[ Get the playbook ]**
 
-Image: the score gauge and a page of the sample report (not a stock photo).
+Image: the playbook cover and the one-page checklist (not a stock photo).
 
 ## What you get
 
-- Your readiness score from 0 to 100
-- A score for each area: completeness, duplicates, consistency and governance
-- The top three fixes to make first, ranked by impact
-- A report you can download and share with your team
+- How to measure how many duplicate records you have
+- Match rules for "same customer" across your CRM, billing and support systems
+- A safe order to merge records without breaking your reports
+- How to assign an owner so duplicates don't come back
+- A one-page checklist to share with your team
 
 ## How it works
 
-1. Answer 15 questions about your customer data. It takes about 3 minutes.
-2. See your score and the area holding you back most.
-3. Get the full report with your top three fixes.
+1. Fill in the short form.
+2. Get the playbook by email and download it right away.
+3. Start with week one: measure your duplicates.
 
 ## Proof
 
@@ -41,19 +42,19 @@ Image: the score gauge and a page of the sample report (not a stock photo).
 - Company
 - Job title
 
-Note under the button: "We'll show your score right away and email your full report."
+Note under the button: "We'll email you the playbook. You can also download it on the next page."
 
-[CONFIRM with sales operations: is company size needed on the form, or can it come from enrichment? Fewer fields usually means more completions.]
+[CONFIRM with sales operations: is company size needed on the form, or can it come from enrichment? Fewer fields usually means more downloads.]
 
 ## After submit
 
-- **Score under 50:** results page with the score, the top three fixes and a "Book your demo" button.
-- **Score 50 or above:** results page with the score and the report download. The guide is added when it's published on 2026-08-03.
+- **Thank-you page:** the download link, plus "Want help with week one? Book a demo with a data specialist."
+- **From 2026-08-03:** add the bank webinar to the thank-you page.
 
 ## Why it's written this way
 
-- The headline asks the same question as LinkedIn ad A, which follows the performance log: question headlines beat statements on click-through rate in 2025-Q4 and 2026-Q1.
-- No benchmark claim. The abstract says the assessment doesn't compare companies yet.
+- The headline uses the campaign's message ("One customer, one record") and a specific time promise, which held up well on MQLs in 2026-Q1.
+- No "based on 500+ cleanups" claim. The abstract says the playbook isn't based on a count of customer projects.
 - One proof point only, from the approved list.
 
 ## Copy check result
@@ -64,5 +65,5 @@ Note under the button: "We'll show your score right away and email your full rep
 Copy check: landing-page-draft.csv
 1 of 1 ads pass the hard rules
 
-landing-page / assessment-page  [OK]
+landing-page / playbook-page  [OK]
 ```

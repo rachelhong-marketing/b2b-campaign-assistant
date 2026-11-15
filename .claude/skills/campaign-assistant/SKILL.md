@@ -77,7 +77,7 @@ Input: a go-to-market plan, product marketing plan or launch plan (file or paste
 Input: an asset abstract from `knowledge/06-assets/` (or pasted), plus the master brief.
 
 1. Follow `knowledge/02-brief-templates/landing-page-template.md` section by section.
-2. Say only what the abstract says the offer does. If the abstract says something isn't true yet (for example no benchmark), don't imply it.
+2. Say only what the abstract says the offer does. If the abstract says something isn't true (for example the playbook isn't based on a count of customer projects), don't imply it.
 3. The headline answers the same question the ads ask. The button uses the same words as the ads' CTA.
 4. Form: as few fields as possible. Mark any field you're unsure sales needs `[CONFIRM]`.
 5. Put the copy in a CSV (`channel=landing-page`, `ad=<page name>`, field names from the template), run `python3 -m assistant copy <file>`, fix and show the result.
@@ -127,8 +127,8 @@ Input: an asset abstract or landing page copy, plus the master brief.
 
 ## Guardrail checks (run these before trusting the skill)
 
-1. Draft the master brief from `knowledge/00-strategy/2026-h2-data-quality-gtm-plan.md`. It must: split $120,000 as $48,000 / $30,000 / $18,000 / $12,000 / $12,000; start content syndication no earlier than 2026-08-03 (the guide's publish date); leave the pipeline target and the email owner `[MISSING]`; leave out the CMO and Manufacturing; and show 0 conflicts in the brief check.
-2. Check `knowledge/01-campaign-plans/2026-q3-data-readiness-master-brief.md`. Open questions must include: tactic budgets add to $130,000 vs. a $120,000 total; content syndication starts before launch; no pipeline target; no owner for the nurture; the guide link is [TBD]; the "500+ companies" claim has no source; the CMO isn't a target persona; content syndication promotes the guide before it's published (August 3).
-3. Draft the landing page from `knowledge/06-assets/data-readiness-assessment-abstract.md`. It must not claim a benchmark against other companies, and the copy check must pass.
+1. Draft the master brief from `knowledge/00-strategy/2026-h2-data-quality-gtm-plan.md`. It must: split $120,000 as $48,000 / $30,000 / $18,000 / $12,000 / $12,000; start content syndication no earlier than 2026-08-03 (the webinar's publish date); leave the pipeline target and the email owner `[MISSING]`; leave out the CMO and Manufacturing; and show 0 conflicts in the brief check.
+2. Check `knowledge/01-campaign-plans/2026-q3-clean-customer-data-master-brief.md`. Open questions must include: tactic budgets add to $130,000 vs. a $120,000 total; content syndication starts before launch; no pipeline target; no owner for the nurture; the webinar link is [TBD]; the "500+ customer cleanups" claim has no source; the CMO isn't a target persona; content syndication promotes the webinar before it's published (August 3).
+3. Draft the landing page from `knowledge/06-assets/customer-data-cleanup-playbook-abstract.md`. It must not claim the playbook is based on a count of customer projects, and the copy check must pass.
 4. Draft search, LinkedIn, Meta and email copy. The copy check must pass with 0 errors, and no number other than an approved proof point may appear in a claim.
 5. Review `sample-data/ad-copy-sample.csv`. It must fail RSA-2 (too few headlines and descriptions, "3x" claim) and rewrite the over-limit headlines in RSA-1 to 30 characters or fewer.

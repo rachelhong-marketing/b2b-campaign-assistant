@@ -6,7 +6,7 @@ from pathlib import Path
 from assistant import brief, copy_rules, keywords, cli
 
 ROOT = Path(__file__).resolve().parent.parent
-BRIEF = ROOT / "knowledge" / "01-campaign-plans" / "2026-q3-data-readiness-master-brief.md"
+BRIEF = ROOT / "knowledge" / "01-campaign-plans" / "2026-q3-clean-customer-data-master-brief.md"
 COPY = ROOT / "sample-data" / "ad-copy-sample.csv"
 KW = ROOT / "sample-data" / "keywords-sample.csv"
 NEG = ROOT / "sample-data" / "negative-keywords.csv"
@@ -32,7 +32,7 @@ class Brief(unittest.TestCase):
 
     def test_complete_brief_is_clean(self):
         clean = BRIEF.read_text()
-        clean = clean.replace("[CONFIRM source]", "(2025 benchmark study)").replace("[TBD]", "https://yoursite.example/guide")
+        clean = clean.replace("[CONFIRM source]", "(2025 benchmark study)").replace("[TBD]", "https://yoursite.example/bank-webinar")
         clean = clean.replace("| Pipeline | |", "| Pipeline | $1,200,000 |").replace("| $0 | |", "| $0 | Email lead |")
         clean = clean.replace("$25,000 | Demand gen lead | 2026-06-15", "$15,000 | Demand gen lead | 2026-07-15")
         self.assertEqual(brief.check(clean), [])
@@ -59,7 +59,7 @@ class Copy(unittest.TestCase):
         self.assertIn("'3x' isn't an approved proof point", self.msgs(("google-search", "RSA-2")))
         self.assertIn("'500+' isn't an approved proof point", self.msgs(("google-search", "RSA-1")))
         self.assertNotIn("40%", self.msgs(("google-search", "RSA-1")))          # approved
-        self.assertEqual(self.r[("linkedin", "Image-B")][0][0], "WARN")          # 30% approved; only 'quiz'
+        self.assertEqual(self.r[("linkedin", "Image-B")][0][0], "WARN")          # 30% approved; only 'ebook'
 
     def test_brand_words_and_email(self):
         self.assertIn("avoid list", self.msgs(("google-search", "RSA-2")))
@@ -92,9 +92,6 @@ class Commands(unittest.TestCase):
             self.assertEqual(cli.main(["copy", str(COPY)]), 1)
 
 
-if __name__ == "__main__":
-    unittest.main()
-
 
 class Drafts(unittest.TestCase):
     """The example drafts must pass the same checks the assistant runs on its own work."""
@@ -125,3 +122,7 @@ class Drafts(unittest.TestCase):
                  ("bullet", "One")]]
         msgs = " ".join(m for _, _, m in copy_rules.check(rows)[("landing-page", "p")])
         self.assertIn("only 1 bullet(s); at least 3", msgs)
+
+
+if __name__ == "__main__":
+    unittest.main()

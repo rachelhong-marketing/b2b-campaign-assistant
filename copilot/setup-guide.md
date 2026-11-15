@@ -30,7 +30,7 @@ For teams that work in Microsoft 365. Takes about an hour, with no IT help neede
 4. Ask for a brief for a channel with no template. It must say so and mark its suggested format [CONFIRM].
 5. Ask for a master brief from a plan with no pipeline target. It must mark the target [MISSING], not make one up.
 6. Ask for keywords. It must not give search volumes or costs, and must not add competitor names.
-7. Ask for a landing page from an asset abstract that says the offer has no benchmark. The page must not claim one.
+7. Ask for a landing page from an asset abstract that says a claim isn't true (for example, the guide isn't based on a count of customer projects). The page must not make that claim.
 
 ## Known limits
 - Instructions max 8,000 characters.

@@ -1,52 +1,52 @@
 # Example output: ad and email copy drafts
 
-> What the campaign assistant returns for "Write the search, LinkedIn, Meta and email copy from the assessment landing page." Made-up campaign. Built from the landing page draft and the asset abstracts, with past learnings from `knowledge/05-performance/creative-performance-log.csv`. All copy is in [`drafts/copy-draft.csv`](drafts/copy-draft.csv).
+> What the campaign assistant returns for "Write the search, LinkedIn, Meta and email copy from the playbook landing page." Made-up campaign. Built from the landing page draft and the asset abstracts, with past learnings from `knowledge/05-performance/creative-performance-log.csv`. All copy is in [`drafts/copy-draft.csv`](drafts/copy-draft.csv).
 
 Character counts are the tool's, not the AI's.
 
 ## Google search ads
 
-Headline 1 leads with the problem or the offer, per the guidelines. At least 8 distinct headlines per ad. "Free" follows the 2025-Q4 learning: a free tool offer beat a demo offer on leads per click.
+Headline 1 leads with the problem or the offer, per the guidelines. At least 8 distinct headlines per ad. "Free" follows the 2025-Q4 learning: a free offer beat a demo offer on leads per click.
 
-### RSA-1 Data readiness
+### RSA-1 Duplicate customer data
 
 | Field | Text | Characters |
 |---|---|---|
-| headline | Is Your Data Ready for AI? | 26 |
-| headline | Data Readiness Assessment | 25 |
-| headline | Get Your Score in 3 Minutes | 27 |
-| headline | Free 3-Minute Assessment | 24 |
-| headline | See Your Top 3 Data Fixes | 25 |
-| headline | Know Before Your AI Project | 27 |
-| headline | Score Your Data From 0 to 100 | 29 |
-| headline | Built for Data Leaders | 22 |
-| headline | Fix Duplicate Customer Data | 27 |
+| headline | Duplicate Customer Records? | 27 |
+| headline | Merge Duplicates in 30 Days | 27 |
+| headline | Free Customer Data Playbook | 27 |
+| headline | One Customer, One Record | 24 |
+| headline | Find and Merge Duplicates | 25 |
+| headline | Keep Duplicates From Returning | 30 |
 | headline | Cut Data Cleanup Time by 40% | 28 |
-| description | Find out if your customer data is ready for AI before you start. Takes 3 minutes. | 81 |
-| description | Get a readiness score and the three fixes that matter most, ranked by impact. | 77 |
-| description | Teams spend 30% of their week fixing data. See where yours stands. | 66 |
-| description | Scores completeness, duplicates, consistency and governance. Free report. | 73 |
-| path | data-readiness | 14 |
-| path | assessment | 10 |
+| headline | Built for Data Leaders | 22 |
+| headline | Get the Free Cleanup Playbook | 29 |
+| headline | Reports That Finally Match | 26 |
+| description | Find, merge and stop duplicate customer records with a free 30-day cleanup plan. | 80 |
+| description | Match rules, a safe merge order and a checklist for your team. Free playbook. | 77 |
+| description | Teams spend 30% of their week fixing data. Get the plan to stop the duplicates. | 79 |
+| description | Customers cut data cleanup time by 40%. Start with the free playbook. | 69 |
+| path | duplicates | 10 |
+| path | playbook | 8 |
 
-### RSA-2 Data quality for AI
+### RSA-2 Cleanup plan
 
 | Field | Text | Characters |
 |---|---|---|
-| headline | Data Quality for AI | 19 |
-| headline | Is Your Data AI-Ready? | 22 |
-| headline | Trust the Data Your AI Uses | 27 |
-| headline | Find Duplicates and Gaps | 24 |
-| headline | Data Readiness Assessment | 25 |
-| headline | Get Your Score in 3 Minutes | 27 |
+| headline | Customer Data Cleanup Plan | 26 |
+| headline | A 30-Day Data Cleanup Plan | 26 |
+| headline | Free Customer Data Playbook | 27 |
+| headline | Data Cleanup Checklist | 22 |
+| headline | Merge Records Without Errors | 28 |
 | headline | Setup in Under Two Weeks | 24 |
 | headline | Cut Data Cleanup Time by 40% | 28 |
-| headline | Free 3-Minute Assessment | 24 |
-| description | AI projects stall on duplicated, incomplete data. See where you stand in 3 minutes. | 83 |
-| description | Customers cut data cleanup time by 40%. Start with a free readiness score. | 74 |
-| description | Take the Data Readiness Assessment and get the top three fixes for your data. | 77 |
-| path | ai-data | 7 |
-| path | assessment | 10 |
+| headline | One Customer, One Record | 24 |
+| headline | Built for Data Leaders | 22 |
+| description | A step-by-step plan to clean up customer records in 30 days. Download it free. | 78 |
+| description | Customers cut data cleanup time by 40%. See how in the free cleanup playbook. | 77 |
+| description | Measure, match, merge and monitor. Get the free Customer Data Cleanup Playbook. | 79 |
+| path | data-cleanup | 12 |
+| path | playbook | 8 |
 
 ## LinkedIn
 
@@ -56,52 +56,52 @@ Ad A uses a question headline (won on click-through rate twice in the performanc
 
 | Field | Text | Characters |
 |---|---|---|
-| intro_text | AI projects stall when customer data is duplicated or incomplete. Find out if yours is ready in 3 minutes. | 106 |
-| headline | Is your customer data ready for AI? | 35 |
+| intro_text | Is the same customer in your CRM five times? Get the free 30-day plan to find, merge and stop duplicate records. | 112 |
+| headline | One customer, five records? | 27 |
 
 ### LI-B time promise
 
 | Field | Text | Characters |
 |---|---|---|
-| intro_text | Get a readiness score for your customer data, plus the three fixes that matter most. It takes 3 minutes. | 104 |
-| headline | Score your data's AI readiness in 3 minutes | 43 |
+| intro_text | Clean up duplicate customer records in 30 days. The free playbook gives you match rules, a safe merge order and a checklist. | 124 |
+| headline | Merge duplicate customer records in 30 days | 43 |
 
 ## Meta retargeting
 
-For people who visited the assessment page but didn't finish.
+For people who visited the playbook page but didn't download it.
 
 ### Meta-R1 retargeting
 
 | Field | Text | Characters |
 |---|---|---|
-| primary_text | Still planning your AI project? Take the 3-minute Data Readiness Assessment and see what to fix first. | 102 |
-| headline | Get your data readiness score | 29 |
+| primary_text | Still merging duplicate records by hand? The free Customer Data Cleanup Playbook has a 30-day plan. | 99 |
+| headline | Get the cleanup playbook | 24 |
 
 ## Email nurture
 
-Email 1 goes to assessment takers who score under 50; Email 2 goes to those who score 50 or above, from 2026-08-03 when the guide is published. One CTA each.
+Email 1 goes to playbook downloads from target accounts. Email 2 goes to everyone in the nurture from 2026-08-03, when the webinar is published; it leads with a customer story, which got the most clicks in the 2026-Q1 nurture. One CTA each.
 
-### Email-1 score under 50
+### Email-1 target accounts
 
 | Field | Text | Characters |
 |---|---|---|
-| subject | Your readiness score, and what to fix first | 43 |
-| preheader | Walk through your top three fixes with a data specialist. | 57 |
-| body | Hi {first name}, thanks for taking the Data Readiness Assessment. Your score shows a few areas to fix before an AI project can rely on this data, and your report ranks the top three. A data specialist can walk you through them, show how other teams fixed the same problems, and answer questions about your setup. Customers cut data cleanup time by 40%, and setup takes under two weeks. You can download your full report anytime from your results page. | 451 |
+| subject | Your 30-day plan, and a faster way to start | 43 |
+| preheader | Walk through your duplicate records with a data specialist. | 59 |
+| body | Hi {first name}, thanks for downloading the Customer Data Cleanup Playbook. Week one is about measuring how many duplicate records you have. A data specialist can do that step with you on your own data, show how other teams set their match rules, and answer questions about your systems. Customers cut data cleanup time by 40%, and setup takes under two weeks. The playbook stays in your inbox if you'd rather start on your own. | 428 |
 | cta | Book your demo | 14 |
 
-### Email-2 guide
+### Email-2 webinar
 
 | Field | Text | Characters |
 |---|---|---|
-| subject | 5 signs your data isn't ready for AI | 36 |
-| preheader | A quick self-check for each one, plus the first step to take. | 61 |
-| body | Hi {first name}, your Data Readiness Assessment showed where your customer data stands today. Our new guide goes one step further: five signs your data isn't ready for AI, each with a quick self-check and one first step. The most common sign is the same customer showing up as several records. Teams spend 30% of their week fixing problems like this. The guide shows how to keep the fixes from wearing off. | 406 |
-| cta | Read the guide | 14 |
+| subject | How a regional bank cleaned up its records | 42 |
+| preheader | 30 minutes, on demand: match rules, merge order and who owns it now. | 68 |
+| body | Hi {first name}, the playbook gives you the plan. This webinar shows it working. A regional bank's data lead walks through how they found their duplicate customer records, agreed on match rules with finance and marketing, and merged records without breaking month-end reports. Teams spend 30% of their week fixing data. This is how one team got that time back. | 360 |
+| cta | Watch the webinar | 17 |
 
 ## UTM content values
 
-One `utm_content` per ad so the reporting agent (step 4) can tell them apart, for example `ready-rsa-1`, `ready-li-a-question`, `ready-li-b-time`, `ready-meta-r1`, `ready-email-1`, `ready-email-2`. Build and check the links with the launch checker in the B2B Paid Media Planner (step 2).
+One `utm_content` per ad so the reporting agent (step 4) can tell them apart, for example `playbook-rsa-1`, `playbook-li-a-question`, `playbook-li-b-time`, `playbook-meta-r1`, `playbook-email-1`, `webinar-email-2`. Build and check the links with the launch checker in the B2B Paid Media Planner (step 2).
 
 ## Copy check result
 
@@ -111,11 +111,11 @@ One `utm_content` per ad so the reporting agent (step 4) can tell them apart, fo
 Copy check: copy-draft.csv
 7 of 7 ads pass the hard rules
 
-google-search / RSA-1 Data readiness  [OK]
-google-search / RSA-2 Data quality for AI  [OK]
+google-search / RSA-1 Duplicate customer data  [OK]
+google-search / RSA-2 Cleanup plan  [OK]
 linkedin / LI-A question  [OK]
 linkedin / LI-B time promise  [OK]
 meta / Meta-R1 retargeting  [OK]
-email / Email-1 score under 50  [OK]
-email / Email-2 guide  [OK]
+email / Email-1 target accounts  [OK]
+email / Email-2 webinar  [OK]
 ```

@@ -12,9 +12,9 @@
 | Use | Don't use |
 |---|---|
 | Data Quality Platform | data cleansing tool, DQ tool |
-| Data Readiness Assessment | quiz, survey |
+| Customer Data Cleanup Playbook | ebook, white paper |
 | customers | users (in external copy) |
-| AI-ready data | AI-powered data |
+| duplicate records | dupes |
 
 ## Approved proof points
 | Proof point | Source | OK to use until |
@@ -29,7 +29,7 @@ Any number not on this list needs a source and approval before it runs.
 **LinkedIn**
 - Intro text: keep the point in the first 150 characters (the rest is cut off on desktop).
 - Headline: about 70 characters or fewer.
-- Show the asset (assessment screen, guide cover) in the image. Faces of stock models underperform for us.
+- Show the asset (playbook cover, webinar speaker) in the image. Faces of stock models underperform for us.
 - Test one variable at a time.
 
 **Google Search**
@@ -46,4 +46,4 @@ Any number not on this list needs a source and approval before it runs.
 **Landing pages**
 - Follow `knowledge/02-brief-templates/landing-page-template.md`.
 - The headline answers the same question the ad asked. Same CTA words as the ad.
-- Show what the reader gets (the report, the guide cover), not stock photos.
+- Show what the reader gets (the playbook cover and a sample page), not stock photos.

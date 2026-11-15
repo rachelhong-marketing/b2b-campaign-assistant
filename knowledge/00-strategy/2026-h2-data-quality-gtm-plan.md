@@ -1,23 +1,23 @@
 # Go-to-market plan: Fernhill Data Quality Platform, 2026 H2
 
-> Made-up example. Fernhill Software is a fictional company. This is the product marketing plan the campaign assistant drafts a master brief from. It covers the whole half-year; the Q3 Data Readiness program is one part of it.
+> Made-up example. Fernhill Software is a fictional company. This is the product marketing plan the campaign assistant drafts a master brief from. It covers the whole half-year; the Q3 Clean Customer Data program is one part of it.
 
 ## Product
 - **Product:** Fernhill Data Quality Platform
-- **What it does:** Finds and fixes duplicate, incomplete and inconsistent customer data across systems, and keeps it clean with ongoing monitoring.
+- **What it does:** Finds and merges duplicate customer records across systems, fills gaps, and keeps data clean with ongoing monitoring.
 - **Pricing model:** Annual subscription, priced by number of records. (Not for external copy.)
 
 ## Positioning
 - **For** data and analytics leaders at mid-size retail and financial services companies
-- **who** want to use AI but don't trust their customer data,
-- **the Data Quality Platform** shows how ready the data is and fixes what's holding it back,
+- **who** can't trust their customer data because the same customer shows up as several records,
+- **the Data Quality Platform** finds and merges duplicate records across systems,
 - **unlike** point tools that clean data once and leave it to drift,
 - **because** it keeps monitoring data quality after setup.
 
 ## Market problem
-- AI projects stall because customer data is duplicated, incomplete or spread across systems.
+- The same customer shows up as several records across the CRM, billing and support systems.
 - Teams spend about 30% of their week fixing data (2025 customer survey, n=120).
-- Leaders often find out their data isn't ready only after an AI project fails.
+- Reports don't match, so leaders stop trusting the numbers.
 
 ## Target market
 - **Industries:** Retail, Financial Services (Manufacturing is H1 2027, not this half)
@@ -29,36 +29,36 @@
 ## Personas for this half
 | Persona | Role in the deal | Main message |
 |---|---|---|
-| Data leader (VP of Data, Head of Data Engineering) | Decision maker | Know if your data is ready for AI before you start |
-| Analytics leader (Director of Analytics, BI Director) | Champion | Trust the numbers your AI and reports run on |
+| Data leader (VP of Data, Head of Data Engineering) | Decision maker | One customer, one record |
+| Analytics leader (Director of Analytics, BI Director) | Champion | Reports that match, because the records do |
 | Finance leader (CFO, VP Finance) | Approver, late stage only | The cost of bad data |
 
 ## Messaging pillars
-1. **Know where you stand:** a readiness score before an AI project starts.
-2. **Fix what matters first:** the top problems, ranked.
-3. **Stay ready:** monitoring so data doesn't drift back.
+1. **Find them:** see how many duplicate records you have.
+2. **Merge them:** one record per customer, without breaking reports.
+3. **Keep them out:** monitoring so duplicates don't come back.
 
 Approved proof points: see `knowledge/03-brand-and-channel/brand-and-channel-guidelines.md`.
 
 ## H2 programs
 | Program | Quarter | Goal | Offer |
 |---|---|---|---|
-| Data Readiness | Q3 (2026-07-01 to 2026-09-30) | New pipeline from target accounts | Data Readiness Assessment |
+| Clean Customer Data | Q3 (2026-07-01 to 2026-09-30) | New pipeline from target accounts | Customer Data Cleanup Playbook |
 | Customer Proof | Q4 | Late-stage deal support | Customer stories, ROI review |
 
-## Q3 Data Readiness program
+## Q3 Clean Customer Data program
 - **Owner:** Integrated Marketing
 - **Budget:** $120,000
 - **Channel split (H2 planning ratio):** LinkedIn 40%, Google Search 25%, account-based display 15%, Meta retargeting 10%, content syndication 10%. Email uses owned lists at no media cost.
-- **Goals:** 600 assessment completions, 180 MQLs, 60 SALs. Pipeline target: [TBD with sales operations]
-- **Hand-off:** assessment takers who score under 50 go to a demo offer; everyone else goes to the nurture.
+- **Goals:** 600 playbook downloads, 180 MQLs, 60 SALs. Pipeline target: [TBD with sales operations]
+- **Hand-off:** downloads from target accounts go to sales development for a demo offer; everyone else goes to the nurture.
 
 ## Assets and dates
-| Asset | Funnel stage | Ready | Link |
+| Asset | Funnel stage | Available | Link |
 |---|---|---|---|
-| 30-second video: "Is your data AI-ready?" | Awareness | 2026-07-01 | https://yoursite.example/ready-video |
-| Data Readiness Assessment | Interest | 2026-07-01 | https://yoursite.example/assessment |
-| Guide: "5 signs your data isn't ready for AI" | Consideration | 2026-08-03 | https://yoursite.example/guide |
+| 30-second video: "One customer, five records" | Awareness | 2026-07-01 | https://yoursite.example/records-video |
+| Customer Data Cleanup Playbook | Interest | 2026-07-01 | https://yoursite.example/cleanup-playbook |
+| On-demand webinar: "How a regional bank cleaned up its customer records" | Consideration | 2026-08-03 | https://yoursite.example/bank-webinar |
 | Demo with a data specialist | Decision | Live | https://yoursite.example/demo |
 
 Asset abstracts are in `knowledge/06-assets/`.
