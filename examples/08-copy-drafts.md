@@ -101,7 +101,7 @@ Email 1 goes to playbook downloads from target accounts. Email 2 goes to everyon
 
 ## UTM content values
 
-One `utm_content` per ad so the reporting agent (step 4) can tell them apart, for example `playbook-rsa-1`, `playbook-li-a-question`, `playbook-li-b-time`, `playbook-meta-r1`, `playbook-email-1`, `webinar-email-2`. Build and check the links with the launch checker in the B2B Paid Media Planner (step 2).
+One `utm_content` per ad so the reporting agent (step 6) can tell them apart, for example `playbook-rsa-1`, `playbook-li-a-question`, `playbook-li-b-time`, `playbook-meta-r1`, `playbook-email-1`, `webinar-email-2`. Build and check the links with the launch checker in the B2B Paid Media Planner (step 4).
 
 ## Copy check result
 

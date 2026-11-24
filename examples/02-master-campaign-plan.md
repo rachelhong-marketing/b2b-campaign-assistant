@@ -80,20 +80,20 @@ Planning milestones suggested by the assistant. [CONFIRM with the campaign owner
 | Date | Milestone |
 |---|---|
 | 2026-06-15 | Creative and copy approved |
-| 2026-06-24 | Tracking links checked with the launch checker (step 2) |
+| 2026-06-24 | Tracking links checked with the launch checker (step 4) |
 | 2026-07-01 | Launch: video, playbook, search, display, nurture |
 | 2026-07-15 | Meta retargeting starts |
 | 2026-08-03 | Webinar published; content syndication starts |
-| 2026-08-17 | Read the LinkedIn headline test (step 3) |
-| 2026-10-15 | Q3 report (step 4) |
-| 2026-11-30 | Sourced and influenced pipeline read (step 5) |
+| 2026-08-17 | Read the LinkedIn headline test (step 5) |
+| 2026-10-15 | Q3 report (step 6) |
+| 2026-11-30 | Sourced and influenced pipeline read (step 7) |
 
 ## Measurement
 
 - **Weekly, direction only:** spend, click-through rate, downloads by channel.
-- **Monthly:** leads, MQLs, SALs, SQLs and cost per MQL by channel and asset, built and checked with the B2B Campaign Reporting Agent (step 4).
-- **Tests:** one LinkedIn headline test, sized on MQLs with the B2B Campaign Test Planner (step 3).
-- **Pipeline:** sourced and influenced pipeline 60 days after the end date, with the B2B Pipeline Attribution Tool (step 5).
+- **Monthly:** leads, MQLs, SALs, SQLs and cost per MQL by channel and asset, built and checked with the B2B Campaign Reporting Agent (step 6).
+- **Tests:** one LinkedIn headline test, sized on MQLs with the B2B Campaign Test Planner (step 5).
+- **Pipeline:** sourced and influenced pipeline 60 days after the end date, with the B2B Pipeline Attribution Tool (step 7).
 
 ## Risks and dependencies
 

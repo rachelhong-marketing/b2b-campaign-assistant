@@ -36,7 +36,7 @@ People can start at any step. If they skip one, use the best source available an
 
 ## Task 1. Brainstorm campaign themes
 
-Input: the go-to-market or product marketing plan, the brand narrative and customer research in `knowledge/00-strategy/` (or pasted). Follow `framework/campaign-planning-framework.md`, steps 1 to 3, and `knowledge/02-brief-templates/campaign-theme-template.md`.
+Input: the go-to-market or product marketing plan (the Product Marketing Agent's `positioning.json` is the intended input), the brand narrative and customer research in `knowledge/00-strategy/` (or pasted). Follow `framework/campaign-planning-framework.md`, steps 1 to 3, and `knowledge/02-brief-templates/campaign-theme-template.md`.
 
 1. List the inputs you used and any that are missing. Both product marketing and brand inputs must be there; if one is missing, say what the themes will lack.
 2. Write 2 or 3 options, not a long list. A theme is not a tagline or slogan: each one must challenge an assumption the buyer holds. Name that assumption.
@@ -56,7 +56,7 @@ Input: the chosen theme plus the go-to-market plan, asset abstracts and brand gu
 4. Messaging pillars, each with an approved proof point. If a pillar has none, say so with `[CONFIRM]`.
 5. Offers by funnel stage, with the date each one is ready (from the abstracts and the plan).
 6. Channel mix and budget: use the plan's split and show the math. Fill in "Promotes" with the funnel stage(s) each channel promotes, and start each channel no earlier than its first offer is ready.
-7. ABM plan, timeline, measurement (link steps 3, 4 and 5 of the toolkit), risks and open questions. Mark suggested dates `[CONFIRM]`.
+7. ABM plan, timeline, measurement (link steps 5, 6 and 7 of the toolkit), risks and open questions. Mark suggested dates `[CONFIRM]`.
 8. Run `python3 -m assistant plan <plan.md>`. Fix every CONFLICT; GAPs that are real open questions stay, marked.
 
 ## Task 3. Draft a master brief
