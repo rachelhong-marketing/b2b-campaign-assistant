@@ -10,6 +10,41 @@ It follows a [campaign planning framework](framework/campaign-planning-framework
 
 All data here is made up. Fernhill Software is a fictional company.
 
+## What you give it, and what you get back
+
+### What you give it
+
+Put these in the `knowledge/` and `rules/` folders. The more of them you have, the less the agent has to mark as missing.
+
+| You provide | What it is | Used for |
+|---|---|---|
+| Positioning | Who you sell to, the main messages and the proof you can use. Comes from [step 1](https://github.com/rachelhong-marketing/b2b-product-marketing-agent) (`positioning.json`), or write your own | Campaign theme, audience, messaging |
+| Go-to-market plan | Your goals, budget and timing for the half-year or quarter | Goals, budget, timeline |
+| Brand narrative and customer research | How you talk about the company, and what customers told you | Theme options, ad and page copy |
+| Templates | Your own theme, campaign plan, master brief, channel brief and landing page templates | The layout of every draft |
+| Brand and channel guidelines | Voice, words to use and avoid, approved proof points, channel rules | Copy checks |
+| Audience and competitors | Target account rules, personas, competitor list | Targeting, keyword blocks |
+| Past results | A log of which ads and offers worked | "What we learned" in briefs and copy |
+| Asset abstracts | A short summary of each ebook, playbook or webinar you promote | Landing pages and ads |
+| Limits and word lists (`rules/`) | Character limits for each ad platform, and brand words | Exact checks |
+| Your own drafts (optional) | A brief, ad copy or keyword list your team already wrote | Reviews |
+
+### What you get back
+
+| Output | What it looks like | Example |
+|---|---|---|
+| Campaign theme options | 2 or 3 themes, the research behind each, a recommendation, and an agenda for your team's brainstorm | [01](examples/01-campaign-themes.md) |
+| Master campaign plan | Goals, audience, theme, messages, offers, channel mix and budget, timeline, measurement | [02](examples/02-master-campaign-plan.md) |
+| Master brief | One page for the channel owners: audience, message, call to action, assets, budgets, owners, dates | [03](examples/03-master-brief-draft.md) |
+| Brief check | A list of problems and open questions on a brief you wrote, and who should answer each | [04](examples/04-master-brief-check.md) |
+| Channel brief | Paid search, paid social or email brief in your template | [05](examples/05-paid-search-brief.md) |
+| Keyword list | Ad groups, keywords, match types and negatives, as a CSV | [06](examples/06-keyword-draft.md) |
+| Landing page draft | Title, headline, what you get, how it works, proof, form | [07](examples/07-landing-page-draft.md) |
+| Ad and email copy | Search, LinkedIn, Meta and email copy within each platform's limits | [08](examples/08-copy-drafts.md) |
+| Copy review | A 1 to 5 score, what to fix, a rewrite that fits the limits, and risks | [09](examples/09-copy-review.md) |
+
+Anything the agent can't back up from your files is marked `[MISSING]` or `[CONFIRM]` for a person to fill in. Nothing is invented.
+
 ## Why this exists
 
 Most campaign problems start before the first ad is written. Teams jump to a theme before they've gathered the inputs, so it's either too product-led or too vague. Then the plan and briefs get written by hand, and the same mistakes slip through: budgets that don't add up, a persona sales doesn't sell to, a channel promoting a webinar that isn't published yet, a 34-character Google headline, a "3x faster" claim nobody can source.
